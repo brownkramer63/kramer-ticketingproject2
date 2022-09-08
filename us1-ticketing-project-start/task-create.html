@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -12,8 +12,8 @@
             rel="stylesheet"
             href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/libs/css/style.css" />
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/libs/css/style.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
@@ -30,7 +30,7 @@
             rel="stylesheet"
             href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
     />
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css"/>
     <link
             rel="stylesheet"
             href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
@@ -49,7 +49,7 @@
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <a class="navbar-brand" href="https://cydeo.com/"
-            >CYDEO Task Create</a
+            >CYDEO</a
             >
             <button
                     class="navbar-toggler"
@@ -101,7 +101,7 @@
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- left sidebar -->
-
+    <!-- ============================================================== -->
     <div class="nav-left-sidebar sidebar-dark">
         <div class="menu-list">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -119,10 +119,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-column">
-
-
-
-                        </li>
                         <li class="nav-item">
                             <a
                                     class="nav-link"
@@ -131,22 +127,21 @@
                                     aria-expanded="false"
                                     data-target="#submenu-2"
                                     aria-controls="submenu-2"
-                            ><i class="fa fa-fw fa-rocket"></i>Administation</a
+                            ><i class="fa fa-fw fa-rocket"></i>Administration</a
                             >
                             <div id="submenu-2" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="User-Create.html"
+                                        <a class="nav-link" href="user-create.html"
                                         >User Create
                                             <span class="badge badge-secondary">New</span></a
                                         >
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Project-Create.html"
+                                        <a class="nav-link" href="project-create.html"
                                         >Project Create</a
                                         >
                                     </li>
-
                                 </ul>
                             </div>
                         </li>
@@ -163,16 +158,15 @@
                             <div id="submenu-3" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Task-Create.html"
+                                        <a class="nav-link" href="task-create.html"
                                         >Task Create</a
                                         >
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Project-Status.html"
+                                        <a class="nav-link" href="project-status.html"
                                         >Project Status</a
                                         >
                                     </li>
-
                                 </ul>
                             </div>
                         </li>
@@ -189,27 +183,24 @@
                             <div id="submenu-4" class="collapse submenu" style="">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Pending-Tasks.html"
+                                        <a class="nav-link" href="pending-tasks.html"
                                         >Pending Tasks</a
                                         >
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="Archive.html"
+                                        <a class="nav-link" href="archive.html"
                                         >Archive</a
                                         >
                                     </li>
-
                                 </ul>
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
     <!-- ============================================================== -->
-
     <!-- end left sidebar -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
@@ -218,13 +209,140 @@
     <div class="dashboard-wrapper">
         <div class="dashboard-ecommerce">
             <div class="container-fluid dashboard-content">
-                <!-- ============================================================== -->
-                <!-- pageheader  -->
-                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- ============================================================== -->
+                        <!-- pageheader  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="page-header" id="top">
+                                    <h2 class="pageheader-title">Task Create</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end pageheader  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- form  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
 
-                <!-- ============================================================== -->
-                <!-- end pageheader  -->
-                <!-- ============================================================== -->
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label>Project</label>
+                                            <select name="projectDrop" id="projectDrop" class="custom-select"
+                                                    required="required">
+                                                <option value="none" selected disabled>Select</option>
+                                                <option value="hrcrm">Human Resources CRM</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label>Assigned Employee</label>
+                                            <select name="employeeDrop" id="employeeDrop" class="custom-select"
+                                                    required="required">
+                                                <option value="none" selected disabled>Select</option>
+                                                <option value="jamal">Jamal</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label for="tasksubject" class="col-form-label">Task Subject</label>
+                                            <input id="tasksubject" type="text" class="form-control"
+                                                   placeholder="task subject">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label>Task Detail</label>
+                                            <textarea placeholder="write your task details..." class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <button class="btn btn-success float-right" type="submit">Save</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end form  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- table  -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" id="bottom">
+                                <h2 class="pageheader-title">Task List</h2>
+                            </div>
+
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Task Subject</th>
+                                    <th scope="col">Assigned Employee</th>
+                                    <th scope="col">Assigned Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>PRJ001-Human Resource CRM</td>
+                                    <td>Database Connection</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/11/2022</td>
+                                    <td>In Progress</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PRJ002-Infra Upgrade</td>
+                                    <td>Server LAN Settings</td>
+                                    <td>Shaun Hayns</td>
+                                    <td>04/12/2022</td>
+                                    <td>Complete</td>
+                                    <td>
+                                        <a href="#">
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </a>
+                                    </td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end table  -->
+                        <!-- ============================================================== -->
+                        <footer class="page-footer font-small blue fixed-bottom">
+                            <div class="footer-copyright text-center py-3">© 2022 Cydeo – All Rights Reserved</div>
+                        </footer>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- ============================================================== -->
